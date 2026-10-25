@@ -1,0 +1,69 @@
+/* Accessibility & High Contrast Enhancements */
+:root {
+    --brand-navy: #0B1020;
+    --brand-violet: #7456FF;
+    --brand-teal: #00BFA6;
+    --brand-bg: #F7F9FC;
+    --brand-amber: #F59E0B;
+    --brand-danger: #EF4444;
+}
+
+/* Ensure focus visible indicators meet WCAG 2.2 AA (min 3:1 contrast ratio) */
+*:focus-visible {
+    outline: 3px solid var(--brand-violet) !important;
+    outline-offset: 2px !important;
+}
+
+/* Card primitives */
+.metric-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    padding: 1.25rem;
+    box-shadow: 0 1px 3px 0 rgba(11, 16, 32, 0.05);
+    margin-bottom: 1rem;
+}
+
+.metric-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #64748B;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.metric-value {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--brand-navy);
+    margin-top: 0.25rem;
+}
+
+.banner-warning {
+    background-color: #FEF3C7;
+    border-left: 4px solid var(--brand-amber);
+    padding: 0.875rem 1rem;
+    border-radius: 4px;
+    color: #92400E;
+    font-size: 0.925rem;
+}
+
+.banner-uncertainty {
+    background-color: #EEF2FF;
+    border-left: 4px solid var(--brand-violet);
+    padding: 0.875rem 1rem;
+    border-radius: 4px;
+    color: #3730A3;
+    font-size: 0.925rem;
+}
+
+.badge-tag {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+.badge-verified { background: #D1FAE5; color: #065F46; }
+.badge-unverified { background: #FEF3C7; color: #92400E; }
+.badge-disputed { background: #FEE2E2; color: #991B1B; }
